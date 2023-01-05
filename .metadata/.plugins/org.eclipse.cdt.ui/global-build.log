@@ -252,3 +252,17 @@ arm-none-eabi-size   blank.elf
    4688	     20	   1572	   6280	   1888	blank.elf
 Finished building: default.size.stdout
  
+01:29:02 **** Build of configuration Debug for project blink_test ****
+make -j16 all 
+arm-none-eabi-size   blink_test.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5764	     20	   1572	   7356	   1cbc	blink_test.elf
+Finished building: default.size.stdout
+ 
+01:30:43 **** Incremental Build of configuration Debug for project blank ****
+make -j16 all 
+arm-none-eabi-size   blank.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4688	     20	   1572	   6280	   1888	blank.elf
+Finished building: default.size.stdout
+ 
