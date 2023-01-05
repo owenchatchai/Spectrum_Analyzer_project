@@ -1,0 +1,10 @@
+19:47:59 **** Incremental Build of configuration Debug for project AtoD_converter ****
+make -j16 all 
+arm-none-eabi-size   AtoD_converter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12708	    120	   1728	  14556	   38dc	AtoD_converter.elf
+Finished building: default.size.stdout
+ 
+
+19:47:59 Build Finished. 0 errors, 0 warnings. (took 254ms)
+
