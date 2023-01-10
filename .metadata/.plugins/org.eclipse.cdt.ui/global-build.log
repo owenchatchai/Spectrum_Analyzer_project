@@ -266,3 +266,59 @@ arm-none-eabi-size   blank.elf
    4688	     20	   1572	   6280	   1888	blank.elf
 Finished building: default.size.stdout
  
+21:57:29 **** Build of configuration Debug for project AtoD_converter ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AtoD_converter.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoD_converter\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoD_converter.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoD_converter.elf
+ 
+arm-none-eabi-size   AtoD_converter.elf 
+arm-none-eabi-objdump -h -S  AtoD_converter.elf  > "AtoD_converter.list"
+   text	   data	    bss	    dec	    hex	filename
+  12708	    120	   1728	  14556	   38dc	AtoD_converter.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoD_converter.list
+ 
+21:57:57 **** Incremental Build of configuration Debug for project AtoD_converter ****
+make -j16 all 
+arm-none-eabi-size   AtoD_converter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12708	    120	   1728	  14556	   38dc	AtoD_converter.elf
+Finished building: default.size.stdout
+ 
+22:04:04 **** Incremental Build of configuration Debug for project AtoD_converter ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AtoD_converter.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoD_converter\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoD_converter.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoD_converter.elf
+ 
+arm-none-eabi-size   AtoD_converter.elf 
+arm-none-eabi-objdump -h -S  AtoD_converter.elf  > "AtoD_converter.list"
+   text	   data	    bss	    dec	    hex	filename
+  12708	    120	   1728	  14556	   38dc	AtoD_converter.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoD_converter.list
+ 
+22:05:58 **** Incremental Build of configuration Debug for project AtoD_converter ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AtoD_converter.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoD_converter\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoD_converter.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoD_converter.elf
+ 
+arm-none-eabi-size   AtoD_converter.elf 
+arm-none-eabi-objdump -h -S  AtoD_converter.elf  > "AtoD_converter.list"
+   text	   data	    bss	    dec	    hex	filename
+  12708	    120	   1728	  14556	   38dc	AtoD_converter.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoD_converter.list
+ 
+22:06:59 **** Incremental Build of configuration Debug for project blank ****
+make -j16 all 
+arm-none-eabi-size   blank.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4688	     20	   1572	   6280	   1888	blank.elf
+Finished building: default.size.stdout
+ 
