@@ -1,4 +1,4 @@
-22:06:59 **** Incremental Build of configuration Debug for project blank ****
+21:03:58 **** Build of configuration Debug for project blank ****
 make -j16 all 
 arm-none-eabi-size   blank.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size   blank.elf
 Finished building: default.size.stdout
  
 
-22:06:59 Build Finished. 0 errors, 0 warnings. (took 188ms)
+21:03:59 Build Finished. 0 errors, 0 warnings. (took 250ms)
 
