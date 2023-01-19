@@ -27,23 +27,23 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 00000030  00000000  00000000  00020070  2**0
                   CONTENTS, READONLY
- 12 .debug_info   0000bfd8  00000000  00000000  000200a0  2**0
+ 12 .debug_info   0000bfd6  00000000  00000000  000200a0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_abbrev 00001852  00000000  00000000  0002c078  2**0
+ 13 .debug_abbrev 00001852  00000000  00000000  0002c076  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_aranges 00000b78  00000000  00000000  0002d8d0  2**3
+ 14 .debug_aranges 00000b78  00000000  00000000  0002d8c8  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_ranges 00000ae0  00000000  00000000  0002e448  2**3
+ 15 .debug_ranges 00000ae0  00000000  00000000  0002e440  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  0001646a  00000000  00000000  0002ef28  2**0
+ 16 .debug_macro  0001646a  00000000  00000000  0002ef20  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   0000cba0  00000000  00000000  00045392  2**0
+ 17 .debug_line   0000cb9e  00000000  00000000  0004538a  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    0008deff  00000000  00000000  00051f32  2**0
+ 18 .debug_str    0008deff  00000000  00000000  00051f28  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000050  00000000  00000000  000dfe31  2**0
+ 19 .comment      00000050  00000000  00000000  000dfe27  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00003460  00000000  00000000  000dfe84  2**2
+ 20 .debug_frame  00003460  00000000  00000000  000dfe78  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -420,25 +420,16 @@ int main(void)
  8000584:	b580      	push	{r7, lr}
  8000586:	b08e      	sub	sp, #56	; 0x38
  8000588:	af00      	add	r7, sp, #0
-  /* USER CODE END 1 */
+  /* USER CODE BEGIN 1 */
+  char uart_buf[50];
+  int uart_buf_len;
+  uint16_t timer_val;
 
-  /* MCU Configuration--------------------------------------------------------*/
-
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
  800058a:	f000 fa65 	bl	8000a58 <HAL_Init>
-  /* USER CODE BEGIN Init */
-
-  /* USER CODE END Init */
-
-  /* Configure the system clock */
   SystemClock_Config();
  800058e:	f000 f83f 	bl	8000610 <SystemClock_Config>
-  /* USER CODE BEGIN SysInit */
 
-  /* USER CODE END SysInit */
-
-  /* Initialize all configured peripherals */
   MX_GPIO_Init();
  8000592:	f000 f913 	bl	80007bc <MX_GPIO_Init>
   MX_TIM3_Init();
@@ -446,7 +437,6 @@ int main(void)
   MX_USART1_UART_Init();
  800059a:	f000 f8e5 	bl	8000768 <MX_USART1_UART_Init>
 
-  /* USER CODE BEGIN 2 */
   uart_buf_len = sprintf(uart_buf, "Timer Test\r\n");
  800059e:	463b      	mov	r3, r7
  80005a0:	4917      	ldr	r1, [pc, #92]	; (8000600 <main+0x7c>)
@@ -461,12 +451,12 @@ int main(void)
  80005b2:	4814      	ldr	r0, [pc, #80]	; (8000604 <main+0x80>)
  80005b4:	f001 fcef 	bl	8001f96 <HAL_UART_Transmit>
   /* USER CODE END 2 */
+
   // Start timer
   HAL_TIM_Base_Start(&htim3);
  80005b8:	4813      	ldr	r0, [pc, #76]	; (8000608 <main+0x84>)
  80005ba:	f001 f9f5 	bl	80019a8 <HAL_TIM_Base_Start>
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
+
   while (1)
   {
     /* USER CODE END WHILE */
@@ -504,8 +494,8 @@ int main(void)
  80005f0:	4804      	ldr	r0, [pc, #16]	; (8000604 <main+0x80>)
  80005f2:	f001 fcd0 	bl	8001f96 <HAL_UART_Transmit>
 
-	  HAL_Delay(1000);
- 80005f6:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
+	  HAL_Delay(500);
+ 80005f6:	f44f 70fa 	mov.w	r0, #500	; 0x1f4
  80005fa:	f000 fa9f 	bl	8000b3c <HAL_Delay>
 	  timer_val = __HAL_TIM_GET_COUNTER(&htim3);
  80005fe:	e7de      	b.n	80005be <main+0x3a>

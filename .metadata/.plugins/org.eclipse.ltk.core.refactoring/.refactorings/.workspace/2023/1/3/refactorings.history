@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Timer_interrupt_triggerLED&apos; to &apos;Timer_interrupt_25microSec&apos;" description="Rename resource &apos;Timer_interrupt_triggerLED&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Timer_interrupt_triggerLED" name="Timer_interrupt_25microSec" stamp="1674128667634" updateReferences="true"/>
+</session>

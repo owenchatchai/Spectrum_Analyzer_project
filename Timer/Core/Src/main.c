@@ -68,40 +68,24 @@ static void MX_USART1_UART_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-	char uart_buf[50];
-	int uart_buf_len;
-	uint16_t timer_val;
-  /* USER CODE END 1 */
+  char uart_buf[50];
+  int uart_buf_len;
+  uint16_t timer_val;
 
-  /* MCU Configuration--------------------------------------------------------*/
-
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
-
-  /* USER CODE BEGIN Init */
-
-  /* USER CODE END Init */
-
-  /* Configure the system clock */
   SystemClock_Config();
 
-  /* USER CODE BEGIN SysInit */
-
-  /* USER CODE END SysInit */
-
-  /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_TIM3_Init();
   MX_USART1_UART_Init();
 
-  /* USER CODE BEGIN 2 */
   uart_buf_len = sprintf(uart_buf, "Timer Test\r\n");
   HAL_UART_Transmit(&huart1, (uint8_t *)uart_buf, uart_buf_len, 100);
   /* USER CODE END 2 */
+
   // Start timer
   HAL_TIM_Base_Start(&htim3);
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
+
   while (1)
   {
     /* USER CODE END WHILE */
@@ -114,7 +98,7 @@ int main(void)
 	  uart_buf_len = sprintf(uart_buf, "%u us\r\n", timer_val);
 	  HAL_UART_Transmit(&huart1, (uint8_t *)uart_buf, uart_buf_len, 100);
 
-	  HAL_Delay(1000);
+	  HAL_Delay(500);
 
   }
   /* USER CODE END 3 */
