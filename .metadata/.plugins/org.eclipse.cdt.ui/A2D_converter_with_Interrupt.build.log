@@ -1,19 +1,19 @@
-22:55:40 **** Incremental Build of configuration Debug for project A2D_converter_with_Interrupt ****
+20:31:18 **** Incremental Build of configuration Debug for project A2D_converter_with_Interrupt ****
 make -j16 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 ../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:112:5: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
-  112 |     sprintf(txbuf, "ADC = %d\r\n", (int)adc_result );
-      |     ^~~~~~~
-../Core/Src/main.c:112:5: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:112:6: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  112 |      sprintf (txbuf, "ADC= %d\r\n", (int)adc_result);
+      |      ^~~~~~~
+../Core/Src/main.c:112:6: warning: incompatible implicit declaration of built-in function 'sprintf'
 ../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
    20 | #include "main.h"
   +++ |+#include <stdio.h>
    21 | 
-../Core/Src/main.c:113:50: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
-  113 |     HAL_UART_Transmit(&huart1, (uint8_t *)txbuf, strlen(txbuf), HAL_MAX_DELAY);
-      |                                                  ^~~~~~
-../Core/Src/main.c:113:50: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:113:51: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  113 |      HAL_UART_Transmit(&huart1, (uint8_t *)txbuf, strlen (txbuf), HAL_MAX_DELAY);
+      |                                                   ^~~~~~
+../Core/Src/main.c:113:51: warning: incompatible implicit declaration of built-in function 'strlen'
 ../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'strlen'
    20 | #include "main.h"
   +++ |+#include <string.h>
@@ -24,11 +24,11 @@ Finished building target: A2D_converter_with_Interrupt.elf
 arm-none-eabi-size   A2D_converter_with_Interrupt.elf 
 arm-none-eabi-objdump -h -S  A2D_converter_with_Interrupt.elf  > "A2D_converter_with_Interrupt.list"
    text	   data	    bss	    dec	    hex	filename
-  15604	    120	   1832	  17556	   4494	A2D_converter_with_Interrupt.elf
+  15916	    120	   1832	  17868	   45cc	A2D_converter_with_Interrupt.elf
 Finished building: default.size.stdout
  
 Finished building: A2D_converter_with_Interrupt.list
  
 
-22:55:41 Build Finished. 0 errors, 4 warnings. (took 624ms)
+20:31:18 Build Finished. 0 errors, 4 warnings. (took 622ms)
 

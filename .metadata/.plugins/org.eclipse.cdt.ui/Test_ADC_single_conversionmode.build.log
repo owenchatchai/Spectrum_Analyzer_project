@@ -1,0 +1,10 @@
+00:39:07 **** Incremental Build of configuration Debug for project Test_ADC_single_conversionmode ****
+make -j16 all 
+arm-none-eabi-size   Test_ADC_single_conversionmode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13264	    120	   1768	  15152	   3b30	Test_ADC_single_conversionmode.elf
+Finished building: default.size.stdout
+ 
+
+00:39:08 Build Finished. 0 errors, 0 warnings. (took 188ms)
+
