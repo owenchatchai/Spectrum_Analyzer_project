@@ -24,6 +24,8 @@
  char txbuf[25];
  uint32_t adc_result;
  char flag;
+ int buffer1[1][1];
+ int i,j;
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -100,38 +102,49 @@ int main(void)
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(&htim9);
 
+  /*set i,j value*/
+  i=0;
+  j=0;
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    /* USER CODE END WHILE */
 	  if(flag == 1)
-	  	  {
-	  		sprintf (txbuf, "ADC= %d\r\n", (int)adc_result);
-	  		HAL_UART_Transmit(&huart1, (uint8_t *)txbuf, strlen (txbuf), HAL_MAX_DELAY);
-	  		flag = 0;
+	  {
+		  for (i = 0; i < 1; i++)
+		  	  {
+			  	  for (j = 0; j < 1; j++)
+			  	  	  {
+			  		  	  buffer1 = adc_result ;
+			  	  	  }
+		  	  }
+		  flag = 0;
+		  i=0;
+		  j=0;
+	  }
 
-	  	  }
-	  	  HAL_Delay(100);
+
+	  /* USER CODE END WHILE */
+
     /* USER CODE BEGIN 3 */
+  }
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+  {
+  HAL_ADC_Start_IT(&hadc1);
+   }
+
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef*h)
+  {
+  		adc_result = HAL_ADC_GetValue(&hadc1);
+  		flag = 1;
   }
   /* USER CODE END 3 */
 }
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
-{
-HAL_ADC_Start_IT(&hadc1);
- }
 
-void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef*h)
-{
-	if (h == &hadc1)
-	{
-		adc_result = HAL_ADC_GetValue(&hadc1);
-		flag = 1;
-	}
-}
 /**
   * @brief System Clock Configuration
   * @retval None
