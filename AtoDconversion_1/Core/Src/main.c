@@ -21,11 +21,10 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
- char txbuf[25];
- uint32_t adc_result;
- char flag;
- int buffer1[1][1];
- int i,j;
+#include <stdio.h>
+#include <string.h>
+#include "arm_math.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -35,6 +34,10 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+
+  char flag;
+  uint16_t  adc_result[1024] = {0};
+  uint16_t i ;
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -101,47 +104,32 @@ int main(void)
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(&htim9);
-
-  /*set i,j value*/
-  i=0;
-  j=0;
-
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
   while (1)
   {
 	  if(flag == 1)
 	  {
-		  for (i = 0; i < 1; i++)
+		  for (i = 0; i < 1024; i++)
 		  	  {
-			  	  for (j = 0; j < 1; j++)
-			  	  	  {
-			  		  	  buffer1 = adc_result ;
-			  	  	  }
+			  adc_result[i] = HAL_ADC_GetValue(&hadc1);
 		  	  }
-		  flag = 0;
-		  i=0;
-		  j=0;
 	  }
 
+	  flag = 0;
 
-	  /* USER CODE END WHILE */
+
+    /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
   }
 
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
-  {
-  HAL_ADC_Start_IT(&hadc1);
-   }
 
-void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef*h)
-  {
-  		adc_result = HAL_ADC_GetValue(&hadc1);
-  		flag = 1;
-  }
+
+
   /* USER CODE END 3 */
 }
 
@@ -331,7 +319,17 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+  {
+  HAL_ADC_Start_IT(&hadc1);
+   }
 
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef*h)
+  {
+//		static int16_t row1 = 0;
+		flag = 1;
+
+  }
 /* USER CODE END 4 */
 
 /**
