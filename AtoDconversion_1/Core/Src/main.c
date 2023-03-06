@@ -36,8 +36,17 @@
 /* USER CODE BEGIN PD */
 
   char flag;
-  uint16_t  adc_result[1024] = {0};
-  uint16_t i ;
+  uint16_t adc_result[1024] = {0};
+
+  int16_t buff_in[2][4]={0};
+  int16_t buff_out[2][4]={0};
+
+  int16_t i = 0;
+  int8_t s = 0;
+  char flag = 0;
+  char stop ;
+
+  arm_rfft_fast_instance_f32 fft_handler;
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -94,7 +103,7 @@ int main(void)
   SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
-
+ arm_rfft_fast_init_f32(&fft_handler,1024);
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
@@ -111,15 +120,16 @@ int main(void)
 
   while (1)
   {
-	  if(flag == 1)
-	  {
-		  for (i = 0; i < 1024; i++)
-		  	  {
-			  adc_result[i] = HAL_ADC_GetValue(&hadc1);
-		  	  }
-	  }
+//	  if() //sent buffer1
+//	  {
+//
+//	  }
 
-	  flag = 0;
+//	  else if (flag == 2)
+//	  {
+//
+//	  }
+//	  flag = 0;
 
 
     /* USER CODE END WHILE */
@@ -326,10 +336,30 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef*h)
   {
-//		static int16_t row1 = 0;
+//		int16_t buff_in[2][4] = {0};
+//		int16_t i = 0;
+	buff_in[s][i] = HAL_ADC_GetValue(&hadc1);
+	i = i+1;
+	if (i>=4)
+	{
+		i = 0;
 		flag = 1;
-
+		if (s==0)
+		{
+			s = 1;
+			flag = 0;
+		}
+		else
+		{
+			s = 0;
+			flag = 1;
+		}
+	}
   }
+void FFT()
+{
+	arm_rfft_fast_f32(&fft_handler,&buff_in,&buff_out,0);
+}
 /* USER CODE END 4 */
 
 /**

@@ -407,3 +407,1212 @@ arm-none-eabi-size   AtoDconversion_1.elf
   12612	     20	   3836	  16468	   4054	AtoDconversion_1.elf
 Finished building: default.size.stdout
  
+13:26:16 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12612	     20	   3836	  16468	   4054	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+13:57:30 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12612	     20	   3836	  16468	   4054	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+13:57:59 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12612	     20	   3836	  16468	   4054	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+14:23:39 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12612	     20	   3836	  16468	   4054	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+14:24:45 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12612	     20	   3836	  16468	   4054	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+15:47:28 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:328:33: error: invalid initializer
+  328 |   static int16_t row[1][1024] = 0;
+      |                                 ^
+../Core/Src/main.c:328:18: warning: variable 'row' set but not used [-Wunused-but-set-variable]
+  328 |   static int16_t row[1][1024] = 0;
+      |                  ^~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+15:47:55 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:328:18: warning: variable 'row' set but not used [-Wunused-but-set-variable]
+  328 |   static int16_t row[1][1024] = {0};
+      |                  ^~~
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12688	     20	   3844	  16552	   40a8	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+15:48:10 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12688	     20	   3844	  16552	   40a8	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+15:48:42 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12688	     20	   3844	  16552	   40a8	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+15:48:58 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12688	     20	   3844	  16552	   40a8	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+15:49:13 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12688	     20	   3844	  16552	   40a8	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+15:50:34 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:328:18: warning: variable 'row' set but not used [-Wunused-but-set-variable]
+  328 |   static int16_t row[1][1024] = {0};
+      |                  ^~~
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12716	     20	   3844	  16580	   40c4	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+15:50:55 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12716	     20	   3844	  16580	   40c4	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+15:50:58 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12716	     20	   3844	  16580	   40c4	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+15:51:12 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12716	     20	   3844	  16580	   40c4	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+15:52:22 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:328:11: warning: variable 'row' set but not used [-Wunused-but-set-variable]
+  328 |   int16_t row[1][1024] = {0};
+      |           ^~~
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12740	     20	   1788	  14548	   38d4	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+15:52:26 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12740	     20	   1788	  14548	   38d4	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+15:52:31 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12740	     20	   1788	  14548	   38d4	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+15:52:54 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12740	     20	   1788	  14548	   38d4	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+15:53:07 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12740	     20	   1788	  14548	   38d4	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+15:53:31 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12740	     20	   1788	  14548	   38d4	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+15:54:36 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12716	     20	   3836	  16572	   40bc	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+15:55:01 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12716	     20	   3836	  16572	   40bc	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+15:55:20 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12716	     20	   3836	  16572	   40bc	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+15:55:50 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12716	     20	   3836	  16572	   40bc	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+16:10:25 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12716	     20	   3836	  16572	   40bc	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+16:10:34 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12716	     20	   3836	  16572	   40bc	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+16:10:48 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12716	     20	   3836	  16572	   40bc	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+16:13:46 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:331:11: warning: unused variable 'j' [-Wunused-variable]
+  331 |   int16_t j = 0;
+      |           ^
+../Core/Src/main.c:329:11: warning: variable 'row' set but not used [-Wunused-but-set-variable]
+  329 |   int16_t row[1][1024] = {0};
+      |           ^~~
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12640	     20	   1788	  14448	   3870	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+16:14:09 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:329:11: warning: variable 'row' set but not used [-Wunused-but-set-variable]
+  329 |   int16_t row[1][1024] = {0};
+      |           ^~~
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12632	     20	   1788	  14440	   3868	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+16:14:30 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:329:3: warning: excess elements in array initializer
+  329 |   int16_t row[0][1024] = {0};
+      |   ^~~~~~~
+../Core/Src/main.c:329:3: note: (near initialization for 'row')
+../Core/Src/main.c:329:11: warning: variable 'row' set but not used [-Wunused-but-set-variable]
+  329 |   int16_t row[0][1024] = {0};
+      |           ^~~
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12592	     20	   1788	  14400	   3840	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+16:14:51 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:329:18: warning: variable 'row' set but not used [-Wunused-but-set-variable]
+  329 |   static int16_t row[1][1024] = {0};
+      |                  ^~~
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12592	     20	   3836	  16448	   4040	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+16:17:11 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12592	     20	   3836	  16448	   4040	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+16:18:00 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12596	     20	   3836	  16452	   4044	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+16:18:20 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12596	     20	   3836	  16452	   4044	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+16:18:43 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12596	     20	   3836	  16452	   4044	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+16:18:56 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12596	     20	   3836	  16452	   4044	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+16:19:07 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12596	     20	   3836	  16452	   4044	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+16:20:03 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12612	     20	   3836	  16468	   4054	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+16:20:16 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12612	     20	   3836	  16468	   4054	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+16:20:29 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12612	     20	   3836	  16468	   4054	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+16:30:04 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:334:16: warning: implicit declaration of function 'ADC_Getvalue'; did you mean 'HAL_ADC_GetValue'? [-Wimplicit-function-declaration]
+  334 |    row[0][i] = ADC_Getvalue(hadc1);
+      |                ^~~~~~~~~~~~
+      |                HAL_ADC_GetValue
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o: in function `HAL_ADC_ConvCpltCallback':
+C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Debug/../Core/Src/main.c:334: undefined reference to `ADC_Getvalue'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: AtoDconversion_1.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:30:24 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:334:16: warning: implicit declaration of function 'HAL_ADC_Getvalue'; did you mean 'HAL_ADC_GetValue'? [-Wimplicit-function-declaration]
+  334 |    row[0][i] = HAL_ADC_Getvalue(hadc1);
+      |                ^~~~~~~~~~~~~~~~
+      |                HAL_ADC_GetValue
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o: in function `HAL_ADC_ConvCpltCallback':
+C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Debug/../Core/Src/main.c:334: undefined reference to `HAL_ADC_Getvalue'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: AtoDconversion_1.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:31:33 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:334:16: warning: implicit declaration of function 'HAL_ADC_Getvalue'; did you mean 'HAL_ADC_GetValue'? [-Wimplicit-function-declaration]
+  334 |    row[0][i] = HAL_ADC_Getvalue(&hadc1);
+      |                ^~~~~~~~~~~~~~~~
+      |                HAL_ADC_GetValue
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o: in function `HAL_ADC_ConvCpltCallback':
+C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Debug/../Core/Src/main.c:334: undefined reference to `HAL_ADC_Getvalue'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: AtoDconversion_1.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:34:14 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:334:16: warning: implicit declaration of function 'HAL_ADC_Getvalue'; did you mean 'HAL_ADC_GetValue'? [-Wimplicit-function-declaration]
+  334 |    row[0][i] = HAL_ADC_Getvalue(&hadc1);
+      |                ^~~~~~~~~~~~~~~~
+      |                HAL_ADC_GetValue
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o: in function `HAL_ADC_ConvCpltCallback':
+C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Debug/../Core/Src/main.c:334: undefined reference to `HAL_ADC_Getvalue'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: AtoDconversion_1.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:34:44 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:334:20: warning: implicit declaration of function 'HAL_ADC_Getvalue'; did you mean 'HAL_ADC_GetValue'? [-Wimplicit-function-declaration]
+  334 |    adc_result[i] = HAL_ADC_Getvalue(&hadc1);
+      |                    ^~~~~~~~~~~~~~~~
+      |                    HAL_ADC_GetValue
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o: in function `HAL_ADC_ConvCpltCallback':
+C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Debug/../Core/Src/main.c:334: undefined reference to `HAL_ADC_Getvalue'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: AtoDconversion_1.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:35:57 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12584	     20	   3836	  16440	   4038	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+16:36:46 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12584	     20	   3836	  16440	   4038	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+16:37:08 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12584	     20	   3836	  16440	   4038	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+16:37:21 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12584	     20	   3836	  16440	   4038	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+16:39:08 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12604	     20	   3836	  16460	   404c	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+16:39:15 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12604	     20	   3836	  16460	   404c	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+16:39:36 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12604	     20	   3836	  16460	   404c	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+16:39:51 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12604	     20	   3836	  16460	   404c	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+16:40:55 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12596	     20	   3836	  16452	   4044	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+16:40:58 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12596	     20	   3836	  16452	   4044	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+16:41:13 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12596	     20	   3836	  16452	   4044	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+16:41:32 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12596	     20	   3836	  16452	   4044	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+16:44:32 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12596	     20	   3836	  16452	   4044	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+16:44:38 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12596	     20	   3836	  16452	   4044	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+16:44:52 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12596	     20	   3836	  16452	   4044	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+16:50:13 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:334:4: error: 'row' undeclared (first use in this function); did you mean 'pow'?
+  334 |    row[0][i] = HAL_ADC_GetValue(&hadc1);
+      |    ^~~
+      |    pow
+../Core/Src/main.c:334:4: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:51:10 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12596	     20	   3836	  16452	   4044	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+16:51:30 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12596	     20	   3836	  16452	   4044	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+16:51:42 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12596	     20	   3836	  16452	   4044	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+16:55:50 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:331:18: warning: variable 'row' set but not used [-Wunused-but-set-variable]
+  331 |   static int16_t row[1][1024] = {0};
+      |                  ^~~
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12596	     20	   3836	  16452	   4044	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+16:56:13 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:331:11: warning: variable 'row' set but not used [-Wunused-but-set-variable]
+  331 |   int16_t row[1][1024] = {0};
+      |           ^~~
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12632	     20	   1788	  14440	   3868	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+16:56:20 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12632	     20	   1788	  14440	   3868	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+16:56:35 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12632	     20	   1788	  14440	   3868	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+17:00:12 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12596	     20	   3836	  16452	   4044	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+17:00:23 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12596	     20	   3836	  16452	   4044	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+17:02:27 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12604	     20	   3836	  16460	   404c	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+17:11:16 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:43:10: error: 'select' redeclared as different kind of symbol
+   43 |   int8_t select = 1;
+      |          ^~~~~~
+In file included from c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\sys\types.h:50,
+                 from c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\stdio.h:61,
+                 from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\sys\select.h:76:5: note: previous declaration of 'select' was here
+   76 | int select __P ((int __n, fd_set *__readfds, fd_set *__writefds,
+      |     ^~~~~~
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:336:5: error: 'selec' undeclared (first use in this function); did you mean 'select'?
+  336 |  if(selec == 1){
+      |     ^~~~~
+      |     select
+../Core/Src/main.c:336:5: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:11:36 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:43:10: error: 'select' redeclared as different kind of symbol
+   43 |   int8_t select = 1;
+      |          ^~~~~~
+In file included from c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\sys\types.h:50,
+                 from c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\stdio.h:61,
+                 from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\sys\select.h:76:5: note: previous declaration of 'select' was here
+   76 | int select __P ((int __n, fd_set *__readfds, fd_set *__writefds,
+      |     ^~~~~~
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:342:3: error: 'selec' undeclared (first use in this function); did you mean 'select'?
+  342 |   selec = 2;
+      |   ^~~~~
+      |   select
+../Core/Src/main.c:342:3: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:11:45 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:43:10: error: 'select' redeclared as different kind of symbol
+   43 |   int8_t select = 1;
+      |          ^~~~~~
+In file included from c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\sys\types.h:50,
+                 from c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\stdio.h:61,
+                 from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\sys\select.h:76:5: note: previous declaration of 'select' was here
+   76 | int select __P ((int __n, fd_set *__readfds, fd_set *__writefds,
+      |     ^~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:12:18 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:43:10: error: 'select' redeclared as different kind of symbol
+   43 |   int8_t select = 0;
+      |          ^~~~~~
+In file included from c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\sys\types.h:50,
+                 from c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\stdio.h:61,
+                 from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\sys\select.h:76:5: note: previous declaration of 'select' was here
+   76 | int select __P ((int __n, fd_set *__readfds, fd_set *__writefds,
+      |     ^~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:12:26 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:43:10: error: 'select' redeclared as different kind of symbol
+   43 |   int8_t select ;
+      |          ^~~~~~
+In file included from c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\sys\types.h:50,
+                 from c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\stdio.h:61,
+                 from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\sys\select.h:76:5: note: previous declaration of 'select' was here
+   76 | int select __P ((int __n, fd_set *__readfds, fd_set *__writefds,
+      |     ^~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:12:55 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:43:7: error: 'select' redeclared as different kind of symbol
+   43 |   int select = 1;
+      |       ^~~~~~
+In file included from c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\sys\types.h:50,
+                 from c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\stdio.h:61,
+                 from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\sys\select.h:76:5: note: previous declaration of 'select' was here
+   76 | int select __P ((int __n, fd_set *__readfds, fd_set *__writefds,
+      |     ^~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:14:07 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:43:7: error: 'select' redeclared as different kind of symbol
+   43 |   int select = 1;
+      |       ^~~~~~
+In file included from c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\sys\types.h:50,
+                 from c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\stdio.h:61,
+                 from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\sys\select.h:76:5: note: previous declaration of 'select' was here
+   76 | int select __P ((int __n, fd_set *__readfds, fd_set *__writefds,
+      |     ^~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:14:32 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:43:11: error: 'select' redeclared as different kind of symbol
+   43 |   int16_t select = 1;
+      |           ^~~~~~
+In file included from c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\sys\types.h:50,
+                 from c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\stdio.h:61,
+                 from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\sys\select.h:76:5: note: previous declaration of 'select' was here
+   76 | int select __P ((int __n, fd_set *__readfds, fd_set *__writefds,
+      |     ^~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:15:05 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:43:8: error: 'select' redeclared as different kind of symbol
+   43 |   char select = 1;
+      |        ^~~~~~
+In file included from c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\sys\types.h:50,
+                 from c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\stdio.h:61,
+                 from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\sys\select.h:76:5: note: previous declaration of 'select' was here
+   76 | int select __P ((int __n, fd_set *__readfds, fd_set *__writefds,
+      |     ^~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:16:20 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:43:10: error: 'select' redeclared as different kind of symbol
+   43 |   int8_t select = 0;
+      |          ^~~~~~
+In file included from c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\sys\types.h:50,
+                 from c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\stdio.h:61,
+                 from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.11.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\include\sys\select.h:76:5: note: previous declaration of 'select' was here
+   76 | int select __P ((int __n, fd_set *__readfds, fd_set *__writefds,
+      |     ^~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:17:45 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:336:12: warning: comparison between pointer and integer
+  336 |  if(select == 1){
+      |            ^~
+../Core/Src/main.c:342:10: error: lvalue required as left operand of assignment
+  342 |   select = 2;
+      |          ^
+../Core/Src/main.c:344:12: warning: comparison between pointer and integer
+  344 |  if(select == 2){
+      |            ^~
+../Core/Src/main.c:350:12: error: lvalue required as left operand of assignment
+  350 |     select = 1;
+      |            ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:17:59 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12692	     20	   3836	  16548	   40a4	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+17:18:15 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12692	     24	   3840	  16556	   40ac	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+17:18:33 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12692	     24	   3840	  16556	   40ac	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+17:18:45 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12692	     24	   3840	  16556	   40ac	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+22:01:20 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12676	     24	   3832	  16532	   4094	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+22:04:09 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12676	     24	   3832	  16532	   4094	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+22:04:23 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12676	     24	   3832	  16532	   4094	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+22:07:20 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12676	     24	   3832	  16532	   4094	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+22:08:14 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12676	     24	   3832	  16532	   4094	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+22:08:19 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12676	     24	   3832	  16532	   4094	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+22:08:34 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12676	     24	   3832	  16532	   4094	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+22:10:20 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12676	     24	   5880	  18580	   4894	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+22:10:27 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12676	     24	   5880	  18580	   4894	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+22:10:41 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12676	     24	   5880	  18580	   4894	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+22:14:49 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12668	     24	   1800	  14492	   389c	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+22:14:57 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12668	     24	   1800	  14492	   389c	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+22:15:13 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12668	     24	   1800	  14492	   389c	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+22:16:53 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12684	     24	   1808	  14516	   38b4	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+22:17:26 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12684	     24	   1808	  14516	   38b4	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+22:17:39 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12684	     24	   1808	  14516	   38b4	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+22:18:33 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12684	     24	   1808	  14516	   38b4	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+22:18:49 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12684	     24	   1808	  14516	   38b4	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+22:19:01 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12684	     24	   1808	  14516	   38b4	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+22:21:00 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12708	     24	   1808	  14540	   38cc	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+22:21:04 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12708	     24	   1808	  14540	   38cc	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+23:21:46 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12708	     24	   1808	  14540	   38cc	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+11:59:51 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12708	     24	   1808	  14540	   38cc	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+12:10:07 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/ROG/STM32CubeIDE/workspace_1.11.0/AtoDconversion_1/Drivers/CMSIS/DSP/Include" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AtoDconversion_1.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AtoDconversion_1.map" -Wl,--gc-sections -static -L"C:\Users\ROG\STM32CubeIDE\workspace_1.11.0\AtoDconversion_1\Drivers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AtoDconversion_1.elf
+ 
+arm-none-eabi-size   AtoDconversion_1.elf 
+arm-none-eabi-objdump -h -S  AtoDconversion_1.elf  > "AtoDconversion_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  12656	     20	   1804	  14480	   3890	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AtoDconversion_1.list
+ 
+12:10:40 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12656	     20	   1804	  14480	   3890	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+12:10:56 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12656	     20	   1804	  14480	   3890	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
+12:12:27 **** Incremental Build of configuration Debug for project AtoDconversion_1 ****
+make -j16 all 
+arm-none-eabi-size   AtoDconversion_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12656	     20	   1804	  14480	   3890	AtoDconversion_1.elf
+Finished building: default.size.stdout
+ 
