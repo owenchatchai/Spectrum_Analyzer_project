@@ -33,20 +33,31 @@
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
+  //define size buffer
+  #define Full_buf 4
+  #define Half_buf Full_buf/2
+
+
+
 /* USER CODE BEGIN PD */
 
-  char flag;
-  uint16_t adc_result[1024] = {0};
+  //********************Buffer**************************
+  float buf_in[2][Full_buf]={0}; //Double Buffer that get value from ADC conversion
+  float fft_buf[Full_buf]={0}; //Buffer that use for FFT
+  float fft_buf_out[Full_buf]={0}; //Buffer that already FFT
+  float Cmplt_Buf[Full_buf]={0};
 
-  int16_t buff_in[2][4]={0};
-  int16_t buff_out[2][4]={0};
 
-  int16_t i = 0;
-  int8_t s = 0;
-  char flag = 0;
-  char stop ;
+  int8_t Row_buf = 0;
+  int8_t rdy_Row = 0; //Row that ready for FFT
+  int16_t i = 0; // count
+  int16_t R = 0; // Row that get value from ADC
+  char flag = 0; // flag when buffer is full
+
+
 
   arm_rfft_fast_instance_f32 fft_handler;
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -103,7 +114,7 @@ int main(void)
   SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
- arm_rfft_fast_init_f32(&fft_handler,1024);
+ arm_rfft_fast_init_f32(&fft_handler,Full_buf);
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
@@ -120,27 +131,35 @@ int main(void)
 
   while (1)
   {
-//	  if() //sent buffer1
-//	  {
-//
-//	  }
 
-//	  else if (flag == 2)
-//	  {
-//
-//	  }
-//	  flag = 0;
+	  if(flag == 1)
+	  {
+		 if(R==0)
+		 {
+			 rdy_Row = 1;
+		 }
+		 else
+		 {
+			 rdy_Row = 0;
+		 }
+		  memcpy(fft_buf,*(buf_in+rdy_Row) ,sizeof(fft_buf));
+		  arm_rfft_fast_f32(&fft_handler,fft_buf,fft_buf_out,0);
+		  arm_cmplx_mag_squared_f32(fft_buf_out,Cmplt_Buf,Half_buf);
+		  flag = 0;
+
+	  }
 
 
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-  }
+
 
 
 
 
   /* USER CODE END 3 */
+  }
 }
 
 /**
@@ -338,28 +357,24 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef*h)
   {
 //		int16_t buff_in[2][4] = {0};
 //		int16_t i = 0;
-	buff_in[s][i] = HAL_ADC_GetValue(&hadc1);
+	buf_in[R][i] = HAL_ADC_GetValue(&hadc1);
 	i = i+1;
 	if (i>=4)
 	{
-		i = 0;
+		i=0;
 		flag = 1;
-		if (s==0)
+		if (R==0)
 		{
-			s = 1;
-			flag = 0;
+			R = 1;
 		}
 		else
 		{
-			s = 0;
-			flag = 1;
+			R = 0;
 		}
+
 	}
   }
-void FFT()
-{
-	arm_rfft_fast_f32(&fft_handler,&buff_in,&buff_out,0);
-}
+
 /* USER CODE END 4 */
 
 /**
